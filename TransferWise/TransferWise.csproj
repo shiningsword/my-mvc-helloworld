@@ -158,6 +158,10 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Migrations\201504252142416_userInfo.cs" />
+    <Compile Include="Migrations\201504252142416_userInfo.Designer.cs">
+      <DependentUpon>201504252142416_userInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CmController.cs" />
@@ -174,6 +178,8 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Transfer.cs" />
+    <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -253,6 +259,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201504210450418_Initial.resx">
       <DependentUpon>201504210450418_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504252142416_userInfo.resx">
+      <DependentUpon>201504252142416_userInfo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

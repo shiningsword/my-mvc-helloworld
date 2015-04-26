@@ -8,7 +8,7 @@ namespace TransferWise.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
-    }
+  }
 
     public class ExternalLoginListViewModel
     {
@@ -79,6 +79,9 @@ namespace TransferWise.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+        
+        public UserInfo userInfo { get; set; } 
+  
     }
 
     public class ResetPasswordViewModel

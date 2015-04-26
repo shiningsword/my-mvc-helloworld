@@ -151,7 +151,12 @@ namespace TransferWise.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser {
+                    UserName = model.Email, 
+                    Email = model.Email,
+                    userInfo = model.userInfo
+                };
+                user.userInfo.userID = model.Email;
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -367,7 +372,10 @@ namespace TransferWise.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser 
+                {
+                    UserName = model.Email, Email = model.Email,
+                };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
