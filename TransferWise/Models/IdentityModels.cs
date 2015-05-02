@@ -33,5 +33,7 @@ namespace TransferWise.Models
         }
 
         public System.Data.Entity.DbSet<TransferWise.Models.Contact> Contacts { get; set; }
+
+        public System.Data.Entity.DbSet<TransferWise.Models.Transfer> Transfers { get; set; }
     }
 }
