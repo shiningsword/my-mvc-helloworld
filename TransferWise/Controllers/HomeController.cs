@@ -23,7 +23,7 @@ namespace TransferWise.Controllers
         [AllowAnonymous]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Why you are saving money with ChinaDirect?";
 
             return View();
         }
@@ -53,4 +53,5 @@ namespace TransferWise.Controllers
             return double.Parse(arr[1]);
         }
     }
+
 }

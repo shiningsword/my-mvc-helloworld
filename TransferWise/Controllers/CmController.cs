@@ -15,6 +15,7 @@ namespace TransferWise.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Cm
+            [AllowAnonymous]
         public ActionResult Index()
         {
             return View(db.Contacts.ToList());
