@@ -198,6 +198,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\ChinaDirect.jpg" />
+    <Content Include="Images\seattle_bw.jpg" />
     <Content Include="Images\Traditional.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

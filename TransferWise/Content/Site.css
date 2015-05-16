@@ -22,3 +22,16 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.home .vid_wrapper {
+	line-height: 0; position: relative;
+}
+
+
+/*uncomment to enable background image*/
+
+/*#div-with-image_home
+{
+    /*background: url("https://ripple.com/wp-content/themes/ripple-beta/assets/img/mobile_home.jpg") no-repeat center;*/
+      background: url("../Images/seattle_bw.jpg") no-repeat center / cover;
+}*/
